@@ -75,3 +75,8 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 -   Access project in localhost:8000
 -   Access phpmyadmin in localhost:8080
     -   To see password and user for access look to docker-compose.yml or file `.env.example`.
+
+### Others commands
+
+-   To run migrate command its necessary run into container; use follow command -> `docker compose exec app php artisan migrate`
+-   To see all routes `docker compose exec app php artisan route:list`
