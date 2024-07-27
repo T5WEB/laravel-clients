@@ -16,6 +16,10 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
 
+                    <x-nav-link :href="route('cliente.create')" :active="request()->routeIs('cliente.create')">
+                        {{ __('Clientes') }}
+                    </x-nav-link>
+
                     <x-nav-link :href="route('user.index')" :active="request()->routeIs('user.index')">
                         {{ __('Lista de usuários') }}
                     </x-nav-link>
